@@ -5,4 +5,3 @@
 
 {% for post in posts_list %}
     <a href="{% url 'detail' index=post.pk %}">{{post.title}}</a><br>
-{% endfor %}

@@ -1,6 +1,7 @@
 <h1>DIARY EDIT</h1>
 
-<form method="POST">
+<form method="POST"> 
+    {% csrf_token %}
     {{form.as_p}}
-    <button type="submit">Save</button>
+    <button type="submit" class="save btn btn-default">Save</button>
 </form>
